@@ -37,7 +37,6 @@
         }
 
         // Traversing a Queue
-
         while(!myQueue.empty()){
             cout << myQueue.front() << " ";
             myQueue.pop();
