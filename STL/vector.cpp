@@ -92,7 +92,7 @@ int main(){
 
     if(marks.empty() == true){
         cout << "The Vector is Empty" << endl;
-    }else{
+    }else{  
         cout << "The Vector is Not Empty" << endl;
     }
 
