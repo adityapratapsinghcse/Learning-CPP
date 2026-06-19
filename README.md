@@ -1,151 +1,41 @@
-# 🚀 C++ Learning Journey
+# 🚀 Learning C++: From Core Fundamentals to Advanced Concepts
 
-Welcome to my C++ learning repository!
-
-This repository documents my journey of learning C++ from the fundamentals to advanced concepts, including Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), Standard Template Library (STL), and problem-solving.
-
-## 📚 Topics Covered
-
-### Basics
-
-* Variables & Data Types
-* Input / Output
-* Operators
-* Control Flow
-
-  * if / else
-  * switch
-  * loops
-
-### Functions
-
-* Function Declaration
-* Function Definition
-* Parameters & Arguments
-* Return Types
-
-### Arrays
-
-* 1D Arrays
-* 2D Arrays
-* Array Traversal
-
-### Pointers
-
-* Pointer Basics
-* Pointer Arithmetic
-* Dynamic Memory Allocation
-
-### Object-Oriented Programming
-
-* Classes & Objects
-* Constructors
-* Destructors
-* Encapsulation
-* Inheritance
-* Polymorphism
-* Abstraction
-
-### Standard Template Library (STL)
-
-* Vector
-* Pair
-* List
-* Stack
-* Queue
-* Deque
-* Set
-* Map
-* Priority Queue
-
-### Data Structures & Algorithms
-
-* Linked Lists
-* Stacks
-* Queues
-* Trees
-* Graphs
-* Hashing
-* Sorting Algorithms
-* Searching Algorithms
-* Recursion
-* Dynamic Programming
+Welcome to my personal C++ development ledger! This repository is a meticulously structured, from-scratch documentation of my journey mastering the C++ programming language. It tracks my deep dives into the language syntax, modern compilation behaviors, memory management paradigms, and clean architectural design patterns.
 
 ---
 
-## 📂 Repository Structure
+## 📂 Repository Architecture & Structure
+
+The codebase is engineered to modularly separate concepts into isolated milestones, making it intuitive to navigate for both revision and architectural review.
 
 ```text
-C++ Basics/
+Learning-CPP/
 │
-├── Basic.cpp
-├── Variable&Datatype.cpp
-├── controlflow.cpp
-├── switch.cpp
+├── 01_Basics_Functions_and_Files/      # Compilation mechanics and global structural units
+│   ├── forward_declarations.cpp        # Function prototypes and linker resolution
+│   ├── header_guards/                  # #ifndef and #pragma once implementations
+│   └── multiple_files/                 # Handling compilation of isolated translation units
 │
-├── STL/
-│   └── vector.cpp
+├── 02_Debugging_and_Diagnostics/        # Strategies for troubleshooting broken code
+│   ├── semantic_analysis.cpp           # Resolving bugs that pass the compilation phase
+│   └── debugging_tactics.md            # Execution tracing, watches, and call stack analysis
 │
-└── README.md
-```
-
----
-
-## 🎯 Goals
-
-* Build strong C++ fundamentals
-* Master STL containers and algorithms
-* Learn DSA for coding interviews
-* Improve problem-solving skills
-* Prepare for competitive programming
-* Build real-world projects using C++
-
----
-
-## 🛠️ Technologies Used
-
-* C++
-* GCC / G++
-* Visual Studio Code
-* Git & GitHub
-
----
-
-## 📈 Progress
-
-* [x] Basics
-* [x] Variables & Data Types
-* [x] Control Flow
-* [x] Switch Statements
-* [x] Vectors
-* [ ] Arrays
-* [ ] Pointers
-* [ ] OOP
-* [ ] Linked Lists
-* [ ] Stack
-* [ ] Queue
-* [ ] Trees
-* [ ] Graphs
-* [ ] Dynamic Programming
-
----
-
-## 💡 Learning Philosophy
-
-> Learn → Practice → Build → Repeat
-
-The goal of this repository is not just to learn syntax but to understand how things work internally and become a better problem solver.
-
----
-
-## 🤝 Contributions
-
-This repository is primarily for learning purposes, but suggestions, improvements, and discussions are always welcome.
-
----
-
-## ⭐ Support
-
-If you find this repository useful, consider giving it a star.
-
-Happy Coding! 🚀
+├── 03_Fundamental_Data_Types/          # Memory representations of native types
+│   ├── type_casting.cpp                # Explicit conversions via static_cast<type>()
+│   └── size_and_overflow.cpp           # Fixed-width integers (cstdint) and overflow behaviors
+│
+├── 04_Constants_and_Strings/           # High-performance text and value management
+│   ├── constants_constexpr.cpp         # Compile-time optimizations (constexpr vs const)
+│   └── string_views.cpp                # High-efficiency read-only strings via std::string_view
+│
+├── 05_Operators_and_Bitwise/           # Low-level bit-level manipulation and precedence
+│   ├── operator_side_effects.cpp       # Sequence points, prefix vs postfix increment pitfalls
+│   └── bitwise_manipulation.cpp        # Bit flags, masking operations, and std::bitset
+│
+├── 06_Scope_Duration_and_Linkage/     # Lifecycle and visibility of program variables
+│   ├── variable_shadowing.cpp          # Risks of local namespaces overlapping outer blocks
+│   └── inline_variables/               # Global constants and handling internal/external linkage
+│
+└── 07_Control_Flow_and_Random/         # Dynamic execution routing and numeric engines
+    ├── branching_logic.cpp             # If-statements, constexpr-if, and switch fallthroughs
+    └── random_engines.cpp              # Robust pseudo-randomness utilizing Mersenne Twister
