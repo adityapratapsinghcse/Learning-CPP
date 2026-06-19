@@ -1,41 +1,84 @@
-# 🚀 Learning C++: From Core Fundamentals to Advanced Concepts
+# Learning C++ 🚀
 
-Welcome to my personal C++ development ledger! This repository is a meticulously structured, from-scratch documentation of my journey mastering the C++ programming language. It tracks my deep dives into the language syntax, modern compilation behaviors, memory management paradigms, and clean architectural design patterns.
+A personal collection of well-commented C++ programs covering the language from the basics through Object-Oriented Programming and the Standard Template Library (STL). Each file is self-contained, runnable, and documented inline — built as a study log while learning C++ from scratch.
 
----
+## 📁 Repository Structure
 
-## 📂 Repository Architecture & Structure
-
-The codebase is engineered to modularly separate concepts into isolated milestones, making it intuitive to navigate for both revision and architectural review.
-
-```text
+```
 Learning-CPP/
+├── Basic.cpp                  # Hello World, basic cout/cin
+├── Variable&Datatype.cpp      # Variable declaration, initialization & data types
+├── controlflow.cpp            # if / else-if / else statements
+├── switch.cpp                 # switch-case statements
+├── Functions.cpp              # Prototypes, overloading, default & inline functions
+├── Recursion.cpp              # Recursion basics (base case & recursive case)
+├── Pointer.cpp                # Pointers, references & pointer arithmetic
 │
-├── 01_Basics_Functions_and_Files/      # Compilation mechanics and global structural units
-│   ├── forward_declarations.cpp        # Function prototypes and linker resolution
-│   ├── header_guards/                  # #ifndef and #pragma once implementations
-│   └── multiple_files/                 # Handling compilation of isolated translation units
+├── OOPS/                      # Object-Oriented Programming concepts
+│   ├── Basics.cpp             #   Classes & objects
+│   ├── Encapsulation.cpp      #   Encapsulation
+│   ├── Abstraction.cpp        #   Abstraction
+│   ├── Inheritance.cpp        #   Single, multilevel & multiple inheritance
+│   └── Polymorphism.cpp       #   Compile-time & run-time polymorphism
 │
-├── 02_Debugging_and_Diagnostics/        # Strategies for troubleshooting broken code
-│   ├── semantic_analysis.cpp           # Resolving bugs that pass the compilation phase
-│   └── debugging_tactics.md            # Execution tracing, watches, and call stack analysis
-│
-├── 03_Fundamental_Data_Types/          # Memory representations of native types
-│   ├── type_casting.cpp                # Explicit conversions via static_cast<type>()
-│   └── size_and_overflow.cpp           # Fixed-width integers (cstdint) and overflow behaviors
-│
-├── 04_Constants_and_Strings/           # High-performance text and value management
-│   ├── constants_constexpr.cpp         # Compile-time optimizations (constexpr vs const)
-│   └── string_views.cpp                # High-efficiency read-only strings via std::string_view
-│
-├── 05_Operators_and_Bitwise/           # Low-level bit-level manipulation and precedence
-│   ├── operator_side_effects.cpp       # Sequence points, prefix vs postfix increment pitfalls
-│   └── bitwise_manipulation.cpp        # Bit flags, masking operations, and std::bitset
-│
-├── 06_Scope_Duration_and_Linkage/     # Lifecycle and visibility of program variables
-│   ├── variable_shadowing.cpp          # Risks of local namespaces overlapping outer blocks
-│   └── inline_variables/               # Global constants and handling internal/external linkage
-│
-└── 07_Control_Flow_and_Random/         # Dynamic execution routing and numeric engines
-    ├── branching_logic.cpp             # If-statements, constexpr-if, and switch fallthroughs
-    └── random_engines.cpp              # Robust pseudo-randomness utilizing Mersenne Twister
+└── STL/                        # Standard Template Library
+    ├── Containers/             #   vector, list, deque, stack, queue,
+    │                           #   priority_queue, set, map
+    ├── Iterators/              #   Input, Output, Forward, Bidirectional & Random
+    │                           #   access iterators
+    ├── Algorithms/             #   sorting, searching, min/max, heap, numeric,
+    │                           #   set operations & general iteration
+    └── Functors/                #   built-in functors & custom functors
+```
+
+## 📚 Topics Covered
+
+- **Fundamentals** — variables, data types, operators, control flow (`if-else`, `switch`)
+- **Functions** — prototypes, overloading, default arguments, inline functions
+- **Recursion** — base cases and recursive problem solving
+- **Pointers & References** — address-of/dereference operators, pointer arithmetic, pointers to pointers, passing pointers to functions
+- **Object-Oriented Programming** — classes & objects, encapsulation, abstraction, inheritance, polymorphism
+- **STL** — containers, iterators, algorithms, and functors
+
+## 🛠️ How to Run
+
+Each `.cpp` file is independent and can be compiled and run on its own using any standard C++ compiler (g++, clang++, etc.).
+
+```bash
+# Compile
+g++ Basic.cpp -o basic
+
+# Run
+./basic
+```
+
+On Windows (with MinGW):
+
+```bash
+g++ Basic.cpp -o basic.exe
+basic.exe
+```
+
+To try a file inside a subfolder, just point the compiler at its path, e.g.:
+
+```bash
+g++ OOPS/Inheritance.cpp -o inheritance
+./inheritance
+```
+
+## ✅ Prerequisites
+
+- A C++ compiler supporting C++11 or later (g++ / clang++ / MSVC)
+- Basic familiarity with the command line
+
+## 🎯 Purpose
+
+This repository is meant as a learning reference and revision resource — each file focuses on one concept at a time with comments explaining *what* the code does and *why*, making it easy to revisit specific topics.
+
+## 🤝 Contributing
+
+This is primarily a personal learning log, but suggestions, corrections, and improvements are welcome — feel free to open an issue or submit a pull request.
+
+## 📄 License
+
+No license has been specified for this repository. Feel free to reach out to the repository owner if you'd like to use this code.
